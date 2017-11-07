@@ -44,4 +44,4 @@ node_modules
 .vscode
 
 # Seedfiles
-server/seeders
+server/seeders/contactListSeed.json
