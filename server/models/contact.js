@@ -32,22 +32,18 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     streetAddress: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     city: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     state: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     stateFull: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
-    zipCode: { type: DataTypes.INTEGER, allowNull: false },
+    zipCode: { type: DataTypes.INTEGER },
     country: {
       type: DataTypes.STRING,
       defaultValue: "US"
@@ -58,7 +54,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     emailAddress: {
       type: DataTypes.STRING,
-      allowNull: false,
+
       validate: {
         isEmail: true
       }
@@ -72,83 +68,65 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     browserUserAgent: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     telephoneNumber: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     telephoneCountryCode: {
       type: DataTypes.SMALLINT,
       defaultValue: 1
     },
     mothersMaiden: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     birthday: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     age: {
-      type: DataTypes.SMALLINT,
-      allowNull: false
+      type: DataTypes.SMALLINT
     },
     ccType: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     ccNumber: {
       type: DataTypes.BIGINT,
-      allowNull: false,
       validate: {
         isCreditCard: true
       }
     },
     cvv2: {
-      type: DataTypes.SMALLINT,
-      allowNull: false
+      type: DataTypes.SMALLINT
     },
     ccExpires: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     nationalId: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     ups: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     westernUnionMTCN: {
-      type: DataTypes.BIGINT,
-      allowNull: false
+      type: DataTypes.BIGINT
     },
     moneyGramMTCN: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.INTEGER
     },
     color: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     occupation: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     company: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     vehicle: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     domain: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
     },
     id: {
       type: DataTypes.UUID,
